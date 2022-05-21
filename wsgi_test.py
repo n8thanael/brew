@@ -1,16 +1,16 @@
-"""
-WSGI config for brew project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.0/howto/deployment/wsgi/
-"""
-
+# pull master boostrap enviornmental variables
+import logging
 import os
+import sys
+# it's possible to run the demo app if necessary (but we're not doing that)
+from wsgiref.simple_server import demo_app, make_server
+
 import brew
+import os
 from django.core.wsgi import get_wsgi_application
 from whitenoise import WhiteNoise
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'brew')
 
 def test_wsgi_mode(environ, start_response):
     status = '200 OK'
@@ -34,12 +34,16 @@ def test_wsgi_mode(environ, start_response):
 
     return [output.encode('UTF-8')]
 
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'brew')
-
 application = get_wsgi_application()
-application = WhiteNoise(application, max_age=59)
+# application = WhiteNoise(application)
 
 # tests wsgi mode: https://modwsgi.readthedocs.io/en/master/user-guides/reloading-source-code.html
-# application = WhiteNoise(test_wsgi_mode, max_age=59)
+application = WhiteNoise(test_wsgi_mode, max_age=59)
+# application = WhiteNoise(application, max_age=59)
 
+if __name__ == "__main__":
+    # wsgi.application is the django app created to run with wagtail
+    with make_server('', 911, application) as httpd:
+        message = "wsgi_test.py Serving HTTP via wsgiref.simple_server at http://127.0.0.1:911"
+        print(message)
+        httpd.serve_forever()
