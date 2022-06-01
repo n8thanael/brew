@@ -23,9 +23,9 @@ def test_wsgi_mode(environ, start_response):
     key='mod_wsgi.process_group'
     if key not in environ.keys():
     # if not environ['mod_wsgi.process_group']:
-      output = u'test_wsgi_mode(): EMBEDDED MODE'
+      output = u'test_wsgi_mode(): EMBEDDED MODE - brew works'
     else:
-      output = u'test_wsgi_mode(): DAEMON MODE'
+      output = u'test_wsgi_mode(): DAEMON MODE - brew works'
 
     response_headers = [('Content-Type', 'text/plain'),
                         ('Content-Length', str(len(output)))]
