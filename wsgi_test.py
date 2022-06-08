@@ -10,13 +10,18 @@ import os
 from django.core.wsgi import get_wsgi_application
 from brew import settings
 from whitenoise import WhiteNoise
+from pip._internal.operations import freeze
 
 settings_string = 'brew.settings'
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_string)
 
 def test_wsgi_mode(environ, start_response):
+    thisfreeze = ''
+    x = freeze.freeze()
+    for p in x:
+        thisfreeze += p + '  |  '
     status = '200 OK'
-    output = u'test_wsgi_mode(): brew works'
+    output = u'test_wsgi_mode(): brew works - 10:00' + thisfreeze
 
     response_headers = [('Content-Type', 'text/plain'),
                         ('Content-Length', str(len(output)))]
