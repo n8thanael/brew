@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 <!-- templtes/demo.html -->
 
 {% if var %}
 <div>{{ var }}</div>
 {% endif %}
-This is the home page - not much here - wish there was more
+<div>
+<img src="{% static 'img\InfernalMisfitsWords_NoOutline.png' %}">
+<div class="p3 test text-white"> this is a black box </div>
+</div>
 {% endblock %}
