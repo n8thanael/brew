@@ -8,24 +8,15 @@ from wsgiref.simple_server import demo_app, make_server
 import brew
 import os
 from django.core.wsgi import get_wsgi_application
+from brew import settings
 from whitenoise import WhiteNoise
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'brew')
+settings_string = 'brew.settings'
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_string)
 
 def test_wsgi_mode(environ, start_response):
     status = '200 OK'
-
-    import pprint
-    pp = pprint.PrettyPrinter(indent=4)
-    pp = pprint.PrettyPrinter()
-    pp.pprint(os.environ)
-
-    key='mod_wsgi.process_group'
-    if key not in environ.keys():
-    # if not environ['mod_wsgi.process_group']:
-      output = u'test_wsgi_mode(): EMBEDDED MODE'
-    else:
-      output = u'test_wsgi_mode(): DAEMON MODE'
+    output = u'test_wsgi_mode(): brew works'
 
     response_headers = [('Content-Type', 'text/plain'),
                         ('Content-Length', str(len(output)))]
@@ -38,7 +29,7 @@ application = get_wsgi_application()
 # application = WhiteNoise(application)
 
 # tests wsgi mode: https://modwsgi.readthedocs.io/en/master/user-guides/reloading-source-code.html
-application = WhiteNoise(test_wsgi_mode, max_age=59)
+# application = WhiteNoise(test_wsgi_mode, max_age=59)
 # application = WhiteNoise(application, max_age=59)
 
 if __name__ == "__main__":

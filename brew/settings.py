@@ -128,6 +128,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # http://whitenoise.evans.io/en/stable/django.html
 # compression & caching storage
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Just Compression, no caching
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+

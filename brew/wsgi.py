@@ -25,9 +25,8 @@ def test_wsgi_mode(environ, start_response):
 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'brew')
-
 application = get_wsgi_application()
-application = WhiteNoise(application, max_age=59)
+# application = WhiteNoise(application, max_age=59)
 
 # tests wsgi mode: https://modwsgi.readthedocs.io/en/master/user-guides/reloading-source-code.html
 # application = WhiteNoise(test_wsgi_mode, max_age=59)
