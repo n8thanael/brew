@@ -1,3 +1,11 @@
 div.test{
-    background-color:blue;
+    color:white;
+    text-align: center;
+    width:100%;
+    padding: 20px;
+}
+
+.full-screen{
+    width:100vw;
+    height:100vh;
 }
