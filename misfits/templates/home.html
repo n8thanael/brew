@@ -2,13 +2,22 @@
 {% load static %}
 {% block content %}
 <!-- templtes/demo.html -->
-<div class="bg-black full-screen bg-black full-screen d-flex flex-column justify-content-center">
-{% if var %}
-<div>{{ var }}</div>
-{% endif %}
-<div>
-<img class="w-100 p-5" src="{% static 'img\InfernalMisfitsWords_NoOutline.png' %}">
-<div class="test">See You Soon...</div>
+<!-- The video -->
+<div class="d-flex flex-row bg-black full-screen justify-content-center">
+<video autoplay muted loop id="bgvideo">
+    <source src="{% static 'video\BackgroundVideo_shorter.mp4' %}" type="video/mp4">
+</video>
 </div>
+<div id="prime" class="container text-center">
+    <div id="logo-box">
+        <img src="{% static 'img\InfernalMisfitsWords_NoOutline.png' %}">
+        <div class="primary-text row mt-5 py-5"><h1>See You Soon</h1>
+            <p class="p-3 col-10 col-lg-7 m-auto">Lorem ipsum dolor sit amet. Eum inventore error ut atque repellat non facere fugiat. Cum architecto expedita hic voluptatem mollitia ad delectus galisum eos nisi Quis sit neque officiis. Qui atque nihil sit quia eligendi qui dolorem expedita?</p>
+            <p class="p-3 col-10 col-lg-7 m-auto">Id iusto harum et autem sunt ut numquam repellendus nam atque corporis. Et tempora doloremque eos voluptas dolor et necessitatibus dicta. Est quidem tempore est officia cumque in error amet id facere perspiciatis rem error tempora a iusto veniam. Aut repellat quod et sunt voluptas et dolorem molestiae et sint velit id accusamus autem ab necessitatibus voluptatem et sint voluptates.</p>
+            <p>{% if var %}<div>{{ var }}</div>{% endif %}</p>
+        </div>
+    </div>
+    <div id="clip-box"><img src="{% static 'img\backgroundHaze.gif' %}"></div>
+    <div id="black-box">&nbsp;</div>
 </div>
 {% endblock %}
