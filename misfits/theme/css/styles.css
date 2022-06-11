@@ -58,6 +58,19 @@ div.primary-text{
     padding: 20px;
 }
 
+#mission h3{
+    font-size: calc(1.5em + .6vw);
+    padding:0.5em;
+    text-align: center;
+    background-color: rgba(253,58,49,0.2);
+}
+
+@media screen and (min-width: 1350px) {
+    #mission h3{
+        margin: 1em 2em;
+    }
+}
+
 .primary-text h1{
     color:white;
     font-size: 3em;
