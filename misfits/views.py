@@ -6,3 +6,8 @@ def home(request):
     var = "Home"
     # context variables in the {} are accessible on home within {{}}
     return render(request, 'home.html',{'var':var,})
+
+# Create your views here.
+# we need to pass this request
+def test(request):
+    return render(request, 'test.html')

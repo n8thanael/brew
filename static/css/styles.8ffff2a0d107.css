@@ -98,10 +98,10 @@ div.primary-text{
 #box{
     height: calc(100vw * 1.8);
     width:100vw;
-    background-image: url('../img/BW_Pattern_darker.gif');
+    background-image: url("../img/BW_Pattern_darker.408048da87c0.gif");
     background-repeat:repeat;
-    -webkit-mask-image: url('../img/shadow_crop_reverse.svg');
-    mask-image: url('../img/shadow_crop_reverse.svg');
+    -webkit-mask-image: url("../img/shadow_crop_reverse.829eea6c05b4.svg");
+    mask-image: url("../img/shadow_crop_reverse.829eea6c05b4.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: cover;
@@ -117,7 +117,7 @@ div.primary-text{
     /* could probobly use javascript, but oh well */
     height: calc(350vh + 1000px - 100vw);
     width: 100vw;
-    background-image: url(../img/BW_Pattern_darker.gif);
+    background-image: url("../img/BW_Pattern_darker.408048da87c0.gif");
     background-repeat: repeat;
     position: absolute;
     z-index: 0;
