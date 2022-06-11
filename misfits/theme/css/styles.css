@@ -128,7 +128,7 @@ div.primary-text{
 
 #box2{
     /* could probobly use javascript, but oh well */
-    height: calc(350vh + 1000px - 100vw);
+    height: 5300px;
     width: 100vw;
     background-image: url(../img/BW_Pattern_darker.gif);
     background-repeat: repeat;
@@ -137,6 +137,18 @@ div.primary-text{
     top: calc(100vw * 1.8);
     left: 0px;
     right: 0px;
+}
+
+@media screen and (min-width: 700px) {
+    #box2{ height: calc(3200px + 10vw);}
+}
+
+@media screen and (min-width: 1350px) {
+    #box2{ height: 3700px;}
+}
+
+@media screen and (min-width: 1500px) {
+    #box2{ height: 3000px;}
 }
 
 #mini-menu{

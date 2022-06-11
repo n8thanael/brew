@@ -111,10 +111,10 @@ div.primary-text{
 #box{
     height: calc(100vw * 1.8);
     width:100vw;
-    background-image: url('../img/BW_Pattern_darker.gif');
+    background-image: url("../img/BW_Pattern_darker.408048da87c0.gif");
     background-repeat:repeat;
-    -webkit-mask-image: url('../img/shadow_crop_reverse.svg');
-    mask-image: url('../img/shadow_crop_reverse.svg');
+    -webkit-mask-image: url("../img/shadow_crop_reverse.829eea6c05b4.svg");
+    mask-image: url("../img/shadow_crop_reverse.829eea6c05b4.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: cover;
@@ -130,7 +130,7 @@ div.primary-text{
     /* could probobly use javascript, but oh well */
     height: 5300px;
     width: 100vw;
-    background-image: url(../img/BW_Pattern_darker.gif);
+    background-image: url("../img/BW_Pattern_darker.408048da87c0.gif");
     background-repeat: repeat;
     position: absolute;
     z-index: 0;
@@ -139,16 +139,12 @@ div.primary-text{
     right: 0px;
 }
 
-@media screen and (min-width: 700px) {
-    #box2{ height: calc(3200px + 10vw);}
-}
-
 @media screen and (min-width: 1350px) {
-    #box2{ height: 3700px;}
+    #box2{ height: 2575px;}
 }
 
-@media screen and (min-width: 1500px) {
-    #box2{ height: 3000px;}
+@media screen and (min-width: 700px) {
+    #box2{ height: 2700px;}
 }
 
 #mini-menu{
