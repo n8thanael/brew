@@ -1,0 +1,21 @@
+.aaron .aaron-button {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+  font-size: 5em;
+  font-weight: 900;
+}
+.aaron .aaron-button.left {
+  background-color: #11115f;
+  left: 0vw;
+  right: 50vw;
+}
+.aaron .aaron-button.right {
+  background-color: #084408;
+  left: 50vw;
+  right: 0vw;
+}
+
+/*# sourceMappingURL=aaron-styles.css.map */

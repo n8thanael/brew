@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- templtes/demo.html -->
+<!-- The video -->
+<link rel="stylesheet" href="{% static 'css/aaron-styles.css' %}">
+<div id="prime" class="fluid-container aaron">
+    <div class="row prime-top-row">
+        <div class="col-6 d-flex">
+            <a class="aaron-button left" tabindex="0">test</a>
+        </div>
+        <div class="col-6 d-flex">
+            <a class="aaron-button right" tabindex="1">test</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

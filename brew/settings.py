@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1:8000',
     '127.0.0.1:911',
     'www.infernalmisfits.com',
+    'www.nataley.com',
 ]
 
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise',
     'misfits',
+    'aaron',
     'django_extensions'
 ]
 
@@ -128,7 +130,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    BASE_DIR / 'misfits/theme'
+    BASE_DIR / 'misfits/theme',
+    BASE_DIR / 'aaron/assets'
 ]
 
 # Default primary key field type

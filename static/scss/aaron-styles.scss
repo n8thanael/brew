@@ -1,0 +1,43 @@
+.aaron{
+    a.aaron-button{
+        position:fixed;
+        top:0px;
+        bottom:0px;
+        color:white;
+        text-align:center;
+        font-size:5em;
+        font-weight: 900;
+        transition: 0.5s;
+        opacity:0.3;
+    }
+    a.aaron-button:hover{
+        opacity:1;
+    }
+    a.aaron-button:focus{
+        -webkit-animation: clickbeat 1s ease-out;
+        animation: clickbeat 1s ease-out;
+    }
+    a.aaron-button:active {
+        -webkit-animation: none;
+                animation: none;
+      }
+    a.aaron-button.left{
+        background-color: rgb(17, 17, 95);
+        left: 0vw;
+        right: 50vw;
+    }
+    a.aaron-button.right{
+        background-color: rgb(8, 68, 8);
+        left: 50vw;
+        right: 0vw;
+    }
+}
+
+@keyframes clickbeat {
+    0% {
+        border:5vw solid white;
+    }
+    100% {
+        border:0vw solid white;
+    }
+  }
