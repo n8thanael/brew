@@ -1,8 +1,19 @@
 var right = document.querySelector('.aaron-button.right');
 var left = document.querySelector('.aaron-button.left');
+var center = document.querySelector('.aaron-button.center');
 
-right.addEventListener("click", playMe);
-left.addEventListener("click", playMe);
+if (right){
+    right.addEventListener("click", playMe);
+}
+
+if (left){
+    left.addEventListener("click", playMe);
+}
+
+if (center){
+    center.addEventListener("click", playMe);
+}
+
 
 function playMe(el){
     let image = el.target;

@@ -35,6 +35,15 @@
         right: 0vw;
     }
 
+    div.aaron-button.center{
+        left:0vw;
+        right:0vw;
+    }
+    div.aaron-button.right{
+        left: 50vw;
+        right: 0vw;
+    }
+
     div.aaron-button.playing{
         left: 0vw;
         right: 0vw;
@@ -42,7 +51,7 @@
         opacity: 1;
     }
 
-    .playing > .image > img {
+    right.playing > .image > img, left.playing > .image > img,  {
         margin-top: -30vh;
     }
 

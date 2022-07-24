@@ -31,13 +31,21 @@
   left: 50vw;
   right: 0vw;
 }
+.aaron div.aaron-button.center {
+  left: 0vw;
+  right: 0vw;
+}
+.aaron div.aaron-button.right {
+  left: 50vw;
+  right: 0vw;
+}
 .aaron div.aaron-button.playing {
   left: 0vw;
   right: 0vw;
   z-index: 2;
   opacity: 1;
 }
-.aaron .playing > .image > img {
+.aaron right.playing > .image > img, .aaron left.playing > .image > img {
   margin-top: -30vh;
 }
 

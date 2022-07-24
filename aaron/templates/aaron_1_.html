@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static wagtailimages_tags %}
+{% block content %}
+<!-- templtes/demo.html -->
+<!-- The video -->
+<link rel="stylesheet" href="{% static 'css/aaron-styles.css' %}">
+<div id="prime" class="fluid-container aaron">
+    <div class="row prime-top-row">
+        <div class="col-12">
+            {% for page in postPages %}
+                {% if forloop.first %}
+                <div class="aaron-button center" tabindex="0">
+                    <div class="image">{% image page.buttonimage scale-100 %}</div>
+                    <div class="title">{{ page }} <span class="sound"></span></div>
+                    <div class="sound-data d-none">{% for block in page.files %}{{ block }}{% endfor %}</div>
+                    <div class="animate-data d-none">{% for block in page.animate %}{{ block.value.url }}{% endfor %}</div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/media.js' %}" async></script>
+{% endblock %}
