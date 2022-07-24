@@ -1,43 +1,49 @@
 .aaron{
-    a.aaron-button{
+    div.aaron-button{
+        background-color:black;
         position:fixed;
         top:0px;
         bottom:0px;
         color:white;
         text-align:center;
-        font-size:5em;
         font-weight: 900;
-        transition: 0.5s;
-        opacity:0.3;
+        transition: 1s;
+        opacity:0.2;
+        .title{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top:3vh;
+            font-size:2em;
+            width:100%;
+        }
+
+        .image img{
+            width:100%
+        }
     }
-    a.aaron-button:hover{
+    div.aaron-button:hover{
         opacity:1;
     }
-    a.aaron-button:focus{
-        -webkit-animation: clickbeat 1s ease-out;
-        animation: clickbeat 1s ease-out;
-    }
-    a.aaron-button:active {
-        -webkit-animation: none;
-                animation: none;
-      }
-    a.aaron-button.left{
-        background-color: rgb(17, 17, 95);
+
+    div.aaron-button.left{
         left: 0vw;
         right: 50vw;
     }
-    a.aaron-button.right{
-        background-color: rgb(8, 68, 8);
+    div.aaron-button.right{
         left: 50vw;
         right: 0vw;
     }
-}
 
-@keyframes clickbeat {
-    0% {
-        border:5vw solid white;
+    div.aaron-button.playing{
+        left: 0vw;
+        right: 0vw;
+        z-index:2;
+        opacity: 1;
     }
-    100% {
-        border:0vw solid white;
+
+    .playing > .image > img {
+        margin-top: -30vh;
     }
-  }
+
+}

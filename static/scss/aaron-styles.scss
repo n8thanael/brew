@@ -1,5 +1,5 @@
 .aaron{
-    a.aaron-button{
+    div.aaron-button{
         position:fixed;
         top:0px;
         bottom:0px;
@@ -10,23 +10,23 @@
         transition: 0.5s;
         opacity:0.3;
     }
-    a.aaron-button:hover{
+    div.aaron-button:hover{
         opacity:1;
     }
-    a.aaron-button:focus{
+    div.aaron-button:focus{
         -webkit-animation: clickbeat 1s ease-out;
         animation: clickbeat 1s ease-out;
     }
-    a.aaron-button:active {
+    div.aaron-button:active {
         -webkit-animation: none;
                 animation: none;
       }
-    a.aaron-button.left{
+    div.aaron-button.left{
         background-color: rgb(17, 17, 95);
         left: 0vw;
         right: 50vw;
     }
-    a.aaron-button.right{
+    div.aaron-button.right{
         background-color: rgb(8, 68, 8);
         left: 50vw;
         right: 0vw;

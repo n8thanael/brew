@@ -1,4 +1,4 @@
-.aaron a.aaron-button {
+.aaron div.aaron-button {
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -9,23 +9,23 @@
   transition: 0.5s;
   opacity: 0.3;
 }
-.aaron a.aaron-button:hover {
+.aaron div.aaron-button:hover {
   opacity: 1;
 }
-.aaron a.aaron-button:focus {
+.aaron div.aaron-button:focus {
   -webkit-animation: clickbeat 1s ease-out;
   animation: clickbeat 1s ease-out;
 }
-.aaron a.aaron-button:active {
+.aaron div.aaron-button:active {
   -webkit-animation: none;
   animation: none;
 }
-.aaron a.aaron-button.left {
+.aaron div.aaron-button.left {
   background-color: #11115f;
   left: 0vw;
   right: 50vw;
 }
-.aaron a.aaron-button.right {
+.aaron div.aaron-button.right {
   background-color: #084408;
   left: 50vw;
   right: 0vw;
