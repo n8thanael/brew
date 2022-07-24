@@ -8,12 +8,12 @@ from modelcluster.fields import ParentalKey
 from taggit.models import TagBase, ItemBase
 
 class AaronsTag(models.Model):
-    tag = models.CharField(max_length=100,unique=True)
+    tag = models.CharField(max_length=100,unique=True,null=False)
     def __str__(self):
         return self.name
     class Meta:
         verbose_name = "Aaron's Tag"
-        verbose_name_plural = "Aaron Tags"
+        verbose_name_plural = "Aaron's Tags"
 
 # Create your models here.
 class AaronPage(Page):
