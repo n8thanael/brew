@@ -17,6 +17,14 @@
   font-size: 2em;
   width: 100%;
 }
+.aaron div.aaron-button .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  background-color: black;
+  height: 100vh;
+}
 .aaron div.aaron-button .image img {
   width: 100%;
 }

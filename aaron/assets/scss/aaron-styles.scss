@@ -18,6 +18,15 @@
             width:100%;
         }
 
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            background-color: black;
+            height:100vh;
+        }
+
         .image img{
             width:100%
         }
