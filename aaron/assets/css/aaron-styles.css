@@ -24,9 +24,12 @@
   align-content: space-around;
   background-color: black;
   height: 100vh;
+  overflow: hidden;
 }
 .aaron div.aaron-button .image img {
-  width: 100%;
+  height: 100% !important;
+  width: unset !important;
+  max-width: unset !important;
 }
 .aaron div.aaron-button:hover {
   opacity: 1;

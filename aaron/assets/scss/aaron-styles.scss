@@ -9,6 +9,7 @@
         font-weight: 900;
         transition: 1s;
         opacity:0.2;
+        
         .title{
             position: absolute;
             z-index: 1;
@@ -25,10 +26,13 @@
             align-content: space-around;
             background-color: black;
             height:100vh;
+            overflow: hidden;
         }
 
         .image img{
-            width:100%
+            height:100% !important;
+            width: unset !important;
+            max-width: unset !important;
         }
     }
     div.aaron-button:hover{
