@@ -9,7 +9,37 @@
         font-weight: 900;
         transition: 1s;
         opacity:0.2;
+
+        &.left .image,&.right .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            background-color: black;
+            height:100vh;
+            overflow: hidden;
+        }
+
+        &.left .image img,&.right .image img{
+            height:100% !important;
+            width: unset !important;
+            max-width: unset !important;
+        }
+
+        &.center .image{
+            height:100vh;
+        }
+
+        &.center .image img{
+            width:100%
+        }
+
+        &.playing .image img{
+            width:100vw !important;
+            height: auto !important;
+        }
         
+
         .title{
             position: absolute;
             z-index: 1;
@@ -25,14 +55,6 @@
             align-items: center;
             align-content: space-around;
             background-color: black;
-            height:100vh;
-            overflow: hidden;
-        }
-
-        .image img{
-            height:100% !important;
-            width: unset !important;
-            max-width: unset !important;
         }
     }
     div.aaron-button:hover{

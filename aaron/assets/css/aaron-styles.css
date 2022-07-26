@@ -9,6 +9,30 @@
   transition: 1s;
   opacity: 0.2;
 }
+.aaron div.aaron-button.left .image, .aaron div.aaron-button.right .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+.aaron div.aaron-button.left .image img, .aaron div.aaron-button.right .image img {
+  height: 100% !important;
+  width: unset !important;
+  max-width: unset !important;
+}
+.aaron div.aaron-button.center .image {
+  height: 100vh;
+}
+.aaron div.aaron-button.center .image img {
+  width: 100%;
+}
+.aaron div.aaron-button.playing .image img {
+  width: 100vw !important;
+  height: auto !important;
+}
 .aaron div.aaron-button .title {
   position: absolute;
   z-index: 1;
@@ -23,13 +47,6 @@
   align-items: center;
   align-content: space-around;
   background-color: black;
-  height: 100vh;
-  overflow: hidden;
-}
-.aaron div.aaron-button .image img {
-  height: 100% !important;
-  width: unset !important;
-  max-width: unset !important;
 }
 .aaron div.aaron-button:hover {
   opacity: 1;
